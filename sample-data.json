@@ -1,0 +1,30 @@
+// Formatting details:
+// - Byte sizes: Needs to end with " TB", " GB", " MB", " KB" -- Example: 3 GB or 6 MB
+// - Numbers: Needs to end with " TB", " GB", " MB", " KB" -- Example: 3 GB or 6 MB
+{
+  // When not sure about any data - do not add the parameter in the file
+  "title": "Example Model",
+  "description": "A example model",
+  "visible": true,
+  "creator": "Modeling Corp",
+  "announced": "2023-01-01",
+  "num_parameters": "",
+  "gpu_ram": "", // Format X GB, X MB, etc. - 
+  "precision": "", // One of: float16, bfloat16, 8bit, 4bit
+  "links":[
+    {
+      "url": "http://example.com/link",
+      "title": "Understandable Title"
+    }
+  ],
+  "notes": "Write some notes to show below the model details",
+  "variants": {
+    // This can contain any of the above properties to override it for the variants
+    "7b": {
+      "num_parameters": "7B"
+    },
+    "7b": {
+      "num_parameters": "7B"
+    }
+  },
+}
